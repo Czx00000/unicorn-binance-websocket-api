@@ -1,4 +1,7 @@
-# For most projects, this workflow file will not need changing; you simply need
+- name: Upload coverage reports to Codecov
+  uses: codecov/codecov-action@v3
+  env:
+    CODECOV_TOKEN: ${{ secrets.CODECOV_TOKEN }}# For most projects, this workflow file will not need changing; you simply need
 # to commit it to your repository.
 #
 # You may wish to alter this file to override the set of languages analyzed,
